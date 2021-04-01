@@ -46,6 +46,7 @@ class compraController extends Controller
     public function show($id)
     {
         //
+        return "compra";
     }
 
     /**

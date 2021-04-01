@@ -24,6 +24,7 @@ class inventarioController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -46,6 +47,7 @@ class inventarioController extends Controller
     public function show($id)
     {
         //
+        return "inventario";
     }
 
     /**

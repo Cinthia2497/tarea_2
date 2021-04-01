@@ -46,6 +46,7 @@ class usuarioController extends Controller
     public function show($id)
     {
         //
+        return "usuario";
     }
 
     /**

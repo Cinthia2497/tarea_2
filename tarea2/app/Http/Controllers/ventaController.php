@@ -46,6 +46,7 @@ class ventaController extends Controller
     public function show($id)
     {
         //
+        return "venta";
     }
 
     /**

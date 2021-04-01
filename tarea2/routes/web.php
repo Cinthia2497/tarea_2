@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\usuarioController;
+use App\Http\Controllers\productoController;
+use App\Http\Controllers\inventarioController;
+use App\Http\Controllers\compraController;
+use App\Http\Controllers\ventaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +22,15 @@ use Illuminate\Support\Facades\Route;
    // return view('welcome');
 //});
 
-Route::get('/Usuario', function () {
-    return ('Usuario');
-});
+Route::get('/Usuario/{id}', [usuarioController::class, 'show']);
 
-Route::get('/Producto', function () {
-    return ('Producto');
-});
-Route::get('/Inventario', function () {
-    return ('Inventario');
-});
-Route::get('/Compra', function () {
-    return ('Compra');
-    
-});
-Route::get('/Venta', function () {
-    return ('Venta');
-});
+
+Route::get('/Producto/{id}', [productoController::class, 'show']);
+
+Route::get('/Inventario/{id}', [inventarioController::class, 'show']);
+
+
+Route::get('/Compra/{id}', [compraController::class, 'show']);
+
+Route::get('/Venta/{id}', [ventaController::class, 'show']);
+
