@@ -14,6 +14,7 @@ class usuarioController extends Controller
     public function index()
     {
         //
+        return view ("v4");
     }
 
     /**
@@ -46,7 +47,7 @@ class usuarioController extends Controller
     public function show($id)
     {
         //
-        return "usuario";
+      
     }
 
     /**

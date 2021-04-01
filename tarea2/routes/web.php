@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usuarioController;
 use App\Http\Controllers\productoController;
 use App\Http\Controllers\inventarioController;
-use App\Http\Controllers\compraController;
 use App\Http\Controllers\ventaController;
+use App\Http\Controllers\compraController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,15 +23,11 @@ use App\Http\Controllers\ventaController;
    // return view('welcome');
 //});
 
-Route::get('/Usuario/{id}', [usuarioController::class, 'show']);
 
+//Route::get('/Usuario','usuarioController@index');
 
-Route::get('/Producto/{id}', [productoController::class, 'show']);
-
-Route::get('/Inventario/{id}', [inventarioController::class, 'show']);
-
-
-Route::get('/Compra/{id}', [compraController::class, 'show']);
-
-Route::get('/Venta/{id}', [ventaController::class, 'show']);
-
+Route::get('/Usuario', [usuarioController::class, 'index']);
+Route::get('/Producto', [productoController::class, 'index']);
+Route::get('/Inventario', [inventarioController::class, 'index']);
+Route::get('/Compra', [compraController::class, 'index']);
+Route::get('/Venta', [ventaController::class, 'index']);

@@ -14,7 +14,7 @@ class productoController extends Controller
     public function index()
     {
         //
-        
+        return view("v3");
     }
 
     /**
@@ -47,7 +47,7 @@ class productoController extends Controller
     public function show($id)
     {
         //
-        return "producto";
+        
     }
 
     /**

@@ -14,6 +14,7 @@ class ventaController extends Controller
     public function index()
     {
         //
+        return view ("v5");
     }
 
     /**
@@ -46,7 +47,7 @@ class ventaController extends Controller
     public function show($id)
     {
         //
-        return "venta";
+       
     }
 
     /**

@@ -14,6 +14,7 @@ class inventarioController extends Controller
     public function index()
     {
         //
+        return view ("v2");
     }
 
     /**
@@ -47,7 +48,7 @@ class inventarioController extends Controller
     public function show($id)
     {
         //
-        return "inventario";
+       
     }
 
     /**
